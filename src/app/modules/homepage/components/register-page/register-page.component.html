@@ -1,0 +1,70 @@
+<div
+  class="align-items-center flex justify-content-center lg:px-8 md:px-6 px-4 py-8 surface-ground ng-star-inserted"
+  id="login-form"
+>
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <div class="text-center mb-5">
+      <img
+        src="assets/images/blocks/logos/login.png"
+        alt="Image"
+        height="50"
+        class="mb-3"
+      />
+      <div class="text-900 text-3xl font-medium mb-3">Kaydol</div>
+      <span class="text-600 font-medium line-height-3"
+        >Zaten bir hesabın var mı?</span
+      ><a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer"
+        >Giriş Yap!</a
+      >
+    </div>
+    <div>
+      <form [formGroup]="registerForm">
+        <label for="firstName" class="block text-900 font-medium mb-2">Ad</label
+        ><input
+          id="firstName"
+          type="text"
+          formControlName="firstName"
+          class="p-inputtext p-component p-element w-full mb-3"
+        />
+        <label for="lastName" class="block text-900 font-medium mb-2"
+          >Soyad</label
+        ><input
+          id="lastName"
+          type="text"
+          formControlName="lastName"
+          class="p-inputtext p-component p-element w-full mb-3"
+        />
+        <label for="email" class="block text-900 font-medium mb-2"
+          >E-Posta</label
+        ><input
+          id="email"
+          type="email"
+          formControlName="email"
+          class="p-inputtext p-component p-element w-full mb-3"
+          placeholder="E-Posta adresinizi giriniz"
+        /><label for="password1" class="block text-900 font-medium mb-2"
+          >Şifre</label
+        ><input
+          id="password"
+          type="password"
+          formControlName="password"
+          class="p-inputtext p-component p-element w-full mb-3"
+          placeholder="Şifreniz en az 8 karakterden oluşmalıdır."
+        />
+        <div class="flex align-items-center justify-content-between mb-6"></div>
+        <button
+          (click)="register()"
+
+          icon="pi pi-user"
+          class="p-element p-ripple w-full p-button p-component"
+        >
+          <span
+            class="p-button-icon p-button-icon-left pi pi-user"
+            aria-hidden="true"
+          ></span
+          ><span class="p-button-label">Kaydol</span><span class="p-ink"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
