@@ -6,6 +6,7 @@ import { AppReducers } from './store/app.reducer';
 
 import {MegaMenuModule} from 'primeng/megamenu';
 import {ButtonModule} from 'primeng/button';
+import {ToastModule} from 'primeng/toast';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MegaMenuModule,
     BrowserAnimationsModule,
     ButtonModule,
+    ToastModule,
     StoreModule.forRoot(AppReducers),
 
 
